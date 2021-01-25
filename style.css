@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+}
+.box {
+	width: 200px;
+	height: 200px;
+	/*border: 1px solid red;*/
+	background-color: red;
+	margin-top: 200px;
+	border-radius: 20px; 
+	box-shadow: -100px 100px 0px 0px magenta,
+				100px -100px 0px 0px yellow,
+				-100px -100px 0px 0px green,
+				100px 100px 0px 0px blue;
+	transition: box-shadow 2s ease;
+				border-radius: 1s ease;
+}
+.box:hover {
+	border-radius: 30px; 
+	box-shadow: -100px -100px 5px 0px magenta,
+				100px 100px 5px 0px yellow,
+				100px -100px 5px 0px green,
+				-100px 100px 5px 0px blue;
+	/*-100px 100px 0px 0px green,
+				100px -100px 0px 0px blue,
+				-100px -100px 0px 0px yellow,
+				100px 100px 0px 0px magenta;*/
+}
+.box:active {
+	border-radius: 30px; 
+	box-shadow: -200px -200px 5px 0px magenta,
+				200px 200px 5px 0px yellow,
+				200px -200px 5px 0px green,
+				-200px 200px 5px 0px blue;
+}
